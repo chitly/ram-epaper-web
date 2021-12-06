@@ -9,7 +9,16 @@ const Home = () => {
         <title>{'โรงพยาบาลรามคำแหง - Ramkhamhaeng Hospital'}</title>
         <meta name="description" content="Ramkhamhaeng Hospital" />
       </Head>
-      <Flex justifyContent="center">Hello world</Flex>
+      <Flex justifyContent="center">
+        <Flex flexDirection="column" alignItems="center">
+          <Image
+            src="/logo/full-no-white.png"
+            alt="Ramkhamhaeng Hospital"
+            width={300}
+          />
+          <Text textStyles="h3">ระบบอัพโหลดรูปภาพสำหรับหน้าจออิเล็กทรอนิกส์</Text>
+        </Flex>
+      </Flex>
     </Box>
   );
 };
