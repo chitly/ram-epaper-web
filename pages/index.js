@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <Box p={4}>
       <Head>
-        <title>{'Ram E-paper'}</title>
-        <meta name="description" content="Ram E-paper" />
+        <title>{'โรงพยาบาลรามคำแหง - Ramkhamhaeng Hospital'}</title>
+        <meta name="description" content="Ramkhamhaeng Hospital" />
       </Head>
       <Flex justifyContent="center">Hello world</Flex>
     </Box>
