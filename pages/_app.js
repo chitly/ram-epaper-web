@@ -1,7 +1,13 @@
-import '../styles/globals.css'
+import { ThemeProvider } from "styled-components";
+import Theme, { GlobalStyle } from "../components/Theme";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const MyApp = ({ Component, pageProps }) => {
+  return (
+    <ThemeProvider theme={Theme} style={{ height: "100%" }}>
+      <GlobalStyle />
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
+};
 
-export default MyApp
+export default MyApp;
