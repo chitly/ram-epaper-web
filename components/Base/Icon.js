@@ -1,14 +1,13 @@
-import React from "react";
-import { MdHome } from "react-icons/md";
+import { AiOutlineInbox } from 'react-icons/ai';
 
 const List = {
-  Home: "MdHome",
+  Inbox: 'AiOutlineInbox',
 };
 
 const getIconComponent = (name) => {
   switch (name) {
-    case List.Home:
-      return MdHome;
+    case List.Inbox:
+      return AiOutlineInbox;
     default:
       return null;
   }

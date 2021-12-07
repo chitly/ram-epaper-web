@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import { Box, Flex, Text, Image } from '../components/Base';
+import UploadImage from '../components/UploadImage';
 
 const Home = () => {
   return (
@@ -16,7 +17,10 @@ const Home = () => {
             alt="Ramkhamhaeng Hospital"
             width={300}
           />
-          <Text textStyles="h3">ระบบอัพโหลดรูปภาพสำหรับหน้าจออิเล็กทรอนิกส์</Text>
+          <Text textStyles="h3">
+            ระบบอัพโหลดรูปภาพสำหรับหน้าจออิเล็กทรอนิกส์
+          </Text>
+          <UploadImage />
         </Flex>
       </Flex>
     </Box>

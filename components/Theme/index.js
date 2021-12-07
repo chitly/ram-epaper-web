@@ -58,13 +58,9 @@ const Theme = {
   ],
   radii: [0, 2, 4, 16, 9999, '100%'],
   colors: {
-    primary: '#149198',
-    primaryDark: '#28696D',
-    primaryLight: '#C3E6E1',
-    secondary: '#96D702',
-    secondaryDark: '#00A73E',
-    tertiary: '#FFCD01',
-    tertiaryDark: '#FF7D01',
+    primary: '#50B2E0',
+    secondary: '#1B8FD3',
+    tertiary: '#426CB1',
     greyscale: {
       grey1: '#3E3E3E',
       grey2: '#4A4A4A',

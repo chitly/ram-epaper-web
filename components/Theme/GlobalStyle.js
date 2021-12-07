@@ -11,7 +11,6 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     height: 100%;
-    background: linear-gradient(135deg, rgba(254,249,170,1) 0%, rgba(255,1,1,1) 100%, rgba(0,212,255,1) 100%);
   }
   #root {
     height: 100%
