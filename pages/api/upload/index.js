@@ -1,4 +1,3 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import multer from 'multer';
 import { runMiddleware } from '../utils';
 
@@ -12,15 +11,19 @@ const storage = multer.diskStorage({
 });
 
 const handler = async (req, res) => {
-  const upload = multer({ storage });
-  await runMiddleware(req, res, upload.single('imageFile'));
-  if (req.method === 'POST') {
-    console.log('body', req.body);
-    console.log('file', req.file);
+  const { method } = req;
+  if (method === 'POST') {
+    const upload = multer({ storage });
+    await runMiddleware(req, res, upload.single('imageFile'));
+
+    const {
+      file: { filename, path },
+    } = req;
+
     res.status(200).json({
-      name: req.file.filename,
       status: 'done',
-      url: req.file.path,
+      filename,
+      path,
     });
   }
 };
