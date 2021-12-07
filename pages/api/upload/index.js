@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import multer from 'multer';
-import { runMiddleware } from './utils';
+import { runMiddleware } from '../utils';
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {

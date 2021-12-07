@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 import { Box, Flex, Text, Image } from '../components/Base';
-import UploadImage from '../components/UploadImage';
+import ImageForm from '../components/ImageForm';
 
 const Home = () => {
   return (
@@ -18,9 +18,9 @@ const Home = () => {
             width={300}
           />
           <Text textStyles="h3">
-            ระบบอัพโหลดรูปภาพสำหรับหน้าจออิเล็กทรอนิกส์
+            ระบบอัปโหลดรูปภาพสำหรับหน้าจออิเล็กทรอนิกส์
           </Text>
-          <UploadImage />
+          <ImageForm />
         </Flex>
       </Flex>
     </Box>
